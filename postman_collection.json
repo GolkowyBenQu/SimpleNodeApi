@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Express API",
+		"_postman_id": "03310a63-d997-68c0-fcd4-6f24abd1d1ae",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Task",
+			"request": {
+				"url": "http://localhost:3000/tasks/59914db761ba865f25c34d5d",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"a taki sobie task\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"url": "http://localhost:3000/tasks ",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"a taki sobie task 24\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Task list",
+			"request": {
+				"url": "http://localhost:3000/tasks ",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
