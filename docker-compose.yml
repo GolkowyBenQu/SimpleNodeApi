@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongo:
+    build:
+      context: ./docker/mongo
+    ports:
+      - "27017:27017"
+  node:
+    build:
+      context: ./docker/node
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/src
+    links:
+      - mongo
